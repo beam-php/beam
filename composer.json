@@ -4,7 +4,9 @@
     "license": "proprietary",
     "autoload": {
         "psr-4": {
-            "Beam\\": "src"
+            "Beam\\": "src",
+            "Interop\\Routing\\Route\\": "vendor/routing-interop/route",
+            "Interop\\Routing\\": "vendor/routing-interop/dispatcher"
         }
     },
     "require": {
@@ -19,7 +21,8 @@
         "guzzlehttp/psr7": "dev-master",
         "nyholm/psr7": "^1.2",
         "slim/psr7": "^0.5.0",
-        "middlewares/emitter": "^1.0"
+        "middlewares/emitter": "^1.0",
+        "routing-interop/universal": "^0.0.1"
     },
     "suggest": {
         "guzzlehttp/psr7": "Provides great psr/http-message and psr/http-factory implementation"
